@@ -14,7 +14,6 @@
     padding: 20px;
     padding-bottom: 0px;
     padding-top: 50px;
-    width: 100%;
     position: relative;
 }
 
@@ -31,14 +30,12 @@
 .health-content h1{
     font-size: 50px;
     font-weight: 800;
-    width: 100%;
     color: #212529;
 }
 
 .health-content p{
     font-size: 16px;
     font-weight: 350;
-    width: 100%;
 }
 
 .appointment-button{
@@ -135,3 +132,49 @@
     vertical-align: middle;
 }
 
+
+
+
+@media(max-width:645px){
+
+    .hero-section{
+        width: 100%;
+    }
+
+
+    .main-container{
+        padding: 0;
+        display: block;  
+        /* position: none; */
+        padding: 20px;
+    }
+
+    .health-content{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .health-content h1{
+        font-size: 25px;
+    }
+
+
+
+    .doctor-image{
+        display: none;
+    }
+
+
+    .patient-total-count{
+        position: unset;
+        transform: none;
+
+        }
+
+ 
+    
+
+
+
+
+}
