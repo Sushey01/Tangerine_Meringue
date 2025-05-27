@@ -1,0 +1,137 @@
+
+
+.hero-section{
+    background-image: url(../assets/banner.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+   height: 100%;
+
+}
+
+.main-container{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.health-content{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 50px;
+    height: 100%;
+    /* justify-content: center; */
+}
+
+
+.health-content h1{
+    font-size: 50px;
+    font-weight: 800;
+    width: 100%;
+    color: #212529;
+}
+
+.health-content p{
+    font-size: 16px;
+    font-weight: 350;
+    width: 100%;
+}
+
+.appointment-button{
+    display: flex;
+    align-items: center;
+    border: 1px solid #00a0aa;
+    border-radius: 8px;
+    padding-top: 0px;
+    background-color: #00a0aa;
+    padding: 15px;
+        color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.appointment-button:hover{
+    cursor: pointer;
+}
+
+
+
+.patient-total-count{
+    position: absolute;
+    background-color: transparent;
+    padding: 20px;
+    bottom: 70px;
+    left: 49%;
+    transform: translateX(-75%);
+
+
+
+}
+
+.patient-count{
+  display: flex;
+  border: 1px solid #dfe2e3;
+  background-color: #dfe2e3;
+      border-radius: 50px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    width: 360px;
+    gap: 30px;
+}
+
+.patient-photos{
+    align-self: center;
+}
+
+.patient-photos img{
+    width: 50px;
+}
+
+.total-patients{
+    display: flex;
+}
+
+
+.total-count-patients{
+    justify-items: center;
+}
+
+
+.total-count-patients h3{
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    justify-self: flex-start;
+}
+
+
+.total-count-patients p{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.tick-div img{
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 50;
+
+}
+
+.doctor-image{
+    width: 50%;
+}
+
+.doctor-image img{
+    padding-left: 60px;
+    overflow-clip-margin: content-box;
+    vertical-align: middle;
+}
+
