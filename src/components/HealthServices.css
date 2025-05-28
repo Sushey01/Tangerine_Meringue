@@ -26,7 +26,7 @@
 }
 
 .first-health-container{
-    border: 1px solid;
+       border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(223, 247, 234);
 }
@@ -72,7 +72,7 @@
 
 .first-button{
     padding: 5px;
-    border: 1px solid;
+    border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: white;
 
@@ -80,7 +80,7 @@
 
 
 .second-health-container{
-    border: 1px solid;
+        border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(254, 230, 220);
 }
@@ -100,7 +100,7 @@
 
 .second-button{
     padding: 5px;
-    border: 1px solid;
+    border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: white;
 }
@@ -108,7 +108,7 @@
 
 
 .third-health-container{
-    border: 1px solid;
+        border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(254, 239, 193);
 }
@@ -121,7 +121,7 @@
 
 .third-button{
     padding: 5px;
-    border: 1px solid;
+        border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: white;
 }
@@ -136,7 +136,7 @@
 
 
 .fourth-health-container{
-    border: 1px solid;
+        border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(229, 223, 247);
 }
@@ -149,7 +149,7 @@
 
 .fourth-button{
     padding: 5px;
-    border: 1px solid;
+    border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: white;
 }
@@ -163,7 +163,7 @@
 
 
 .fifth-health-container{
-    border: 1px solid;
+       border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(255, 239, 211);
 }
@@ -175,7 +175,7 @@
 
 .fifth-button{
     padding: 5px;
-    border: 1px solid;
+    border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: white;
 }
@@ -190,7 +190,7 @@
 
 
 .sixth-health-container{
-    border: 1px solid;
+    border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(230, 247, 253);
 }
@@ -204,7 +204,7 @@
 
 .sixth-button{
     padding: 5px;
-    border: 1px solid;
+    border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: white;
 }
