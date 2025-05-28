@@ -1,10 +1,10 @@
 import React from "react";
-import JourneyDoctor from "../assets/journeydoct.png";
+import JourneyDoctor from "../assets/images/journeydoct.png";
 import "./Journey.css";
-import Patient1 from "../assets/profile1.png";
-import Patient2 from "../assets/profile2.png";
-import Patient3 from "../assets/profile3.png";
-import BlueTick from "../assets/tick.svg";
+import Patient1 from "../assets/images/profile1.png";
+import Patient2 from "../assets/images/profile2.png";
+import Patient3 from "../assets/images/profile3.png";
+import BlueTick from "../assets/images/tick.svg";
 
 const Journey = () => {
   return (

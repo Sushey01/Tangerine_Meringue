@@ -64,7 +64,7 @@
   display: flex;
 
 
-
+/* border: 1px solid #b2e1e429; */
 /* -webkit-backdrop-filter: blur(10px); */
 /* background: #b2e1e429; */
 /* backdrop-filter: blur(10px); */
@@ -129,20 +129,21 @@ z-index: 18;
 }
 
 .journey-content h1 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 30px;
+
 }
 
 .journey-content h4 {
   font-size: 16px;
   font-weight: 400;
-  color: #00bfa6;
-  margin-bottom: 40px;
+  color: #00a0aa;
+  /* margin-bottom: 0px; */
 }
 
 .journey-content p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
   text-align: justify;

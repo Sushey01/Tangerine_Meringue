@@ -1,0 +1,282 @@
+.health-title{
+    justify-items: center;
+}
+
+
+.health-title h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+.health-container{
+    position: relative;
+   display: flex;
+   padding: 20px;
+}
+
+
+.six-health-container{
+    overflow-y: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.first-health-container{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(223, 247, 234);
+}
+
+
+.first-content p, .second-content p, .third-content p, .fourth-content p, .fifth-content p, .sixth-content p{
+    padding-right: 100px;
+    text-wrap: wrap;
+        font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 60px;
+}
+
+
+.first-image{
+    position: absolute;
+    /* width:fit-content; */
+    top: 16%;
+    left: 14%;
+}
+
+
+.first-title, .second-title , .third-title, .fourth-title, .fifth-title, .sixth-title{
+    border-bottom: 3px solid gainsboro;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+.first-content, .second-content, .third-content, .fourth-content, .fifth-content, .sixth-content{
+    padding: 20px;
+    padding-right: 40px;
+    /* padding-bottom: 40px; */
+}
+
+
+
+.first-title h2{
+    font-size: 25px;
+    color: rgb(13, 131, 67);
+}
+
+.first-button{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+
+.second-health-container{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(254, 230, 220);
+}
+
+
+.second-image{
+    position: absolute;
+    top: 15%;
+    left: 49%;
+}
+
+
+.second-title h2{
+    font-size: 25px;
+    color: rgb(135, 44, 6);
+}
+
+.second-button{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+.third-health-container{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(254, 239, 193);
+}
+
+.third-title h2{
+    font-size: 25px;
+    color: rgb(206, 170, 40);
+}
+
+
+.third-button{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.third-image{
+    position: absolute;
+    top: 16.5%;
+    right: 0;
+    width: 200px;
+}
+
+
+.fourth-health-container{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(229, 223, 247);
+}
+
+.fourth-title h2{
+    font-size: 25px;
+    color: rgb(66, 24, 191);
+}
+
+
+.fourth-button{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.fourth-image{
+    position: absolute;
+    top: 68%;
+    left: 12%;
+}
+
+
+.fifth-health-container{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(255, 239, 211);
+}
+
+.fifth-title h2{
+    font-size: 25px;
+    color: rgb(219, 106, 3);
+}
+
+.fifth-button{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.fifth-image{
+    position: absolute;
+    top: 69%;
+    left: 48.5%;
+}
+
+
+
+.sixth-health-container{
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(230, 247, 253);
+}
+
+.sixth-title h2{
+    font-size: 25px;
+    color: rgb(1, 128, 173);
+}
+
+
+
+.sixth-button{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.sixth-image{
+    position: absolute;
+    top: 68%;
+    right: 1%;
+}
+
+
+
+.first-button, .second-button, .third-button, .fourth-button, .fifth-button, .six-button:hover{
+    cursor: pointer;
+}
+
+
+
+@media(max-width:645px){
+    
+    .health-title{
+        padding: 10px;
+    }
+
+    .health-title h1{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .health-container{
+        display: flex;
+    }
+
+    .six-health-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .first-health-container{
+        width: 100%;
+    }
+
+    .first-image{
+        /* position: absolute; */
+        top: 7%;
+        left: 35%;
+    }
+
+    .second-image{
+        /* position: absolute; */
+        top: 23%;
+        left: 40%;
+    }
+
+    .third-image{
+        top: 40.5%;
+        right: 2%;
+    }
+
+    .fourth-image{
+        top: 57%;
+        left: 30%;
+    }
+
+    .fifth-image{
+        top: 74%;
+        right: 1%;
+    }
+
+    .sixth-image{
+        top: 91%;
+    }
+}
+
