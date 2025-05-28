@@ -19,7 +19,7 @@
 .image-wrapper {
     width: 100%;
   position: relative;
-  height: 450px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -28,45 +28,123 @@
 .yellow-container {
   background-color: #ffc567;
   width: 100%;
-  height: 410px;
+  height: 450px;
   border-radius: 20px;
   z-index: 1;
-  /* position: relative; */
 }
 
 .floating-image {
   position: absolute;
-  /* transform: translateY(-50%); */
-  /* top: -40px; */
   bottom: 0px;
   z-index: 2;
   width: 100%;
-  height: 460px;
+  height: 500px;
   object-fit: contain;
+}
+
+
+
+
+.same-patient-total-count{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 75%;
+    z-index: 18; 
+  background: #b2e1e429;
+  -webkit-backdrop-filter: blur(10px);
+  /* background-color: transparent;  */
+  backdrop-filter: blur(10px);
+}
+
+
+.same-patient-count{
+  display: flex;
+
+
+
+/* -webkit-backdrop-filter: blur(10px); */
+/* background: #b2e1e429; */
+/* backdrop-filter: blur(10px); */
+z-index: 18;
+  border-radius: 50px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    width: 350px;
+    gap: 30px;
+}
+
+.same-patient-photos{
+    align-self: center;
+}
+
+.same-patient-photos img{
+    width: 50px;
+}
+
+.same-total-patients{
+    display: flex;
+}
+
+
+.same-total-count-patients{
+    justify-items: center;
+}
+
+
+.same-total-count-patients h3{
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    justify-self: flex-start;
+}
+
+
+.same-total-count-patients p{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+
+.same-tick-div{
+  z-index: 25;
+}
+
+.same-tick-div img{
+    position: absolute;
+    transform: translateY(-50%);
+    /* z-index: 25; */
 }
 
 /* Content section */
 .journey-content {
   width: 60%;
-  padding-top: 40px;
+  /* padding-top: 40px; */
+  /* padding-bottom: 10px; */
+  padding: 40px;
+  padding-right: 0px;
 }
 
 .journey-content h1 {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .journey-content h4 {
   font-size: 16px;
   font-weight: 400;
   color: #00bfa6;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .journey-content p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
+  font-weight: 400;
   text-align: justify;
   margin-bottom: 30px;
 }
@@ -76,6 +154,7 @@
   background-color: #00bfa6;
   color: white;
   border: none;
+  margin-top: 10px;
   padding: 10px 10px 10px 10px;
   border-radius: 8px;
   font-weight: 400;
@@ -85,4 +164,44 @@
 
 .discover-button:hover {
   background-color: #019d89;
+}
+
+
+
+@media(max-width:645px){
+
+
+  .section1{
+    padding: 30px 20px;
+  }
+
+  .journey-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .doctor-container{
+    width: 100%;
+
+  }
+
+  .same-patient-total-count{
+    width: 100%;
+    background-color: #b2e1e429;
+    background: transparent;
+    left: 20px;
+  }
+
+
+  .same-patient-count{
+    backdrop-filter: none;
+    gap: 10px;
+  }
+
+
+  .journey-content{
+    width: 100%;
+    padding: 20px;
+  }
 }
