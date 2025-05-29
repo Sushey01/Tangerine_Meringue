@@ -181,14 +181,14 @@
 
   .same-patient-total-count{
     width: 100%;
-    background-color: #b2e1e429;
-    background: transparent;
     left: 20px;
   }
 
 
   .same-patient-count{
-    backdrop-filter: none;
+   background-color: #b2e1e429;
+    background: transparent;
+    backdrop-filter: blur(10px);
     gap: 10px;
   }
 

@@ -21,13 +21,12 @@ const HealthServices = () => {
             <h2>Radiology Services</h2>
           </div>
           <div className="first-content">
-            <p>
+             <p>
               At South City Himal Hospital, our team of specialists is equipped
               to provide the most advanced medical care in a compassionate
               environment. We treat all kinds of patients from children to
               senior citizens in our advanced facilities withall.
             </p>
-            
             <button className="first-button">Read More</button>
                <div className="first-image">
             <img src={CardDoc1}></img>
