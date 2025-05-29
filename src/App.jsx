@@ -13,6 +13,7 @@ export default function App(){
       <Journey/> 
       <HealthServices/>
       <Schedule/>
+
     </div>
   )
 }
