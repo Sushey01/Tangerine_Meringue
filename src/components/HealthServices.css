@@ -108,7 +108,7 @@
 
 
 .third-health-container{
-        border: 1px solid #dee2e6;
+    border: 1px solid #dee2e6;
     border-radius: 8px;
     background-color: rgb(254, 239, 193);
 }
@@ -131,7 +131,6 @@
     position: absolute;
     top: 16.5%;
     right: 0;
-    width: 200px;
 }
 
 
@@ -199,6 +198,9 @@
     font-size: 25px;
     color: rgb(1, 128, 173);
 }
+
+
+
 
 
 

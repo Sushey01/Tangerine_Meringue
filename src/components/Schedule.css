@@ -1,0 +1,98 @@
+
+.section3{
+    padding-top: 60px;
+    z-index: 1;
+
+}
+
+
+.schdeule-container{
+    background-image: url(../assets/images/appointBg.png);
+    padding: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.schedule-content{
+    position: relative;
+    display: flex;
+    border: 1px solid #00000080;
+    background-color: #ffffff80;
+    border-radius: 15px;
+    overflow: visible;
+    z-index: 998;
+}
+
+.schedule-content1{
+    width: 50%;
+    z-index: 4;
+    padding: 50px;
+    justify-items: center;
+    padding-left: 70px;
+    padding-bottom: 0px;
+}
+
+
+.schedule-content1 h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+.book-button{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: #00A0AA;
+}
+
+.book-button:hover{
+    background-color: #02727a;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.schedule-image-wrapper{
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 380px;
+    z-index: 5;
+    padding-right: 70px;
+}
+
+
+.image-floating{
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 500px;
+    align-self: center;
+    padding-left: 70px;
+    z-index: 999;
+}
+
+.blue-container{
+    position: absolute;
+    bottom: 0;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 80%;
+    border: 1px solid #234cbb;
+    background-color: #234cbb;
+    z-index: 6;
+    height: 25%;
+}
+
+
+
