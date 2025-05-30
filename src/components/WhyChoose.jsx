@@ -19,11 +19,9 @@ const WhyChoose = () => {
               compounders, dresser and later nurses.
             </p>
           </div>
-          <div className="choose-us-image">
-            <img src={HalfCircle} className="half-circle"></img>
-          </div>
+         
         </div>
-        <div className="choose-image-wrapper">
+       <div className="choose-image-wrapper">
           <div className="quality-content">
             <div className="quality-content1">
               <img src={Safety}></img>
@@ -35,6 +33,51 @@ const WhyChoose = () => {
             </div>
 
             <div className="quality-content1">
+              <img src={Safety}></img>
+              <h4>
+                Quality
+                <br />
+                Safety First
+              </h4>
+            </div>
+
+             <div className="quality-content1">
+              <img src={Safety}></img>
+              <h4>
+                Quality
+                <br />
+                Safety First
+              </h4>
+            </div>
+
+             <div className="quality-content1">
+              <img src={Safety}></img>
+              <h4>
+                Quality
+                <br />
+                Safety First
+              </h4>
+            </div>
+
+             <div className="quality-content1">
+              <img src={Safety}></img>
+              <h4>
+                Quality
+                <br />
+                Safety First
+              </h4>
+            </div>
+
+             <div className="quality-content1">
+              <img src={Safety}></img>
+              <h4>
+                Quality
+                <br />
+                Safety First
+              </h4>
+            </div>
+
+             <div className="quality-content1">
               <img src={Safety}></img>
               <h4>
                 Quality
@@ -70,6 +113,9 @@ const WhyChoose = () => {
               </h4>
             </div>
           </div>
+          <div className="choose-us-image">
+            <img src={HalfCircle} className="half-circle"></img>
+           </div>
           <img src={DoctorGroup} alt="DoctorGroup" className="doctor-group"></img>
         </div>
       </div>
