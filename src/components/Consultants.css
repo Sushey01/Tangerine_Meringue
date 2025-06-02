@@ -59,7 +59,6 @@
 .paragraph{
     font-size: 15px;
     font-weight: 400;
-    /* text-align: justify; */
     margin: 0px;
     padding-bottom: 20px;
 }
@@ -71,24 +70,63 @@
 
 
 
-.first-doctor-container:hover{
+/* .first-doctor-container:hover{
     background-color: purple;
     transition: 0.3s;
-}
+} */
 
 .first-doctor-container{
+    position: relative;
     border: 1px solid;
     padding: 10px;
+    /* background-color: grey; */
 }
 
 .first-doctor-image{
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
+
+.first-doctor-image img{
+    position: absolute;
+    z-index: 20;
+}
+
+
+.social-icons {
+  position: absolute;
+  z-index: 20;
+  top: 30%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* transition: all 0.3s ease; */
+}
+
+.social-icons a {
+  color: blue;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 15%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.first-doctor-image:hover .social-icons {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .first-doctor-info{
     border: 1px solid;
+    bottom: 15%;
+    right: 20%;
 }
 
 .first-doctor-info h4{
@@ -112,6 +150,61 @@
     font-size: 12px;
     text-align: left;
 } 
+
+
+
+.first-hover-container1{
+    position: absolute;
+    width: 70%;
+    height: 65%;
+    z-index: 15;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    top: 32%;
+    padding: 20px;
+    margin-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #dee2e6;
+}
+
+.first-hover-container2{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+    z-index: 15;
+    border-radius: 20px;
+    top: 38%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    background-color: #ced4da;
+    clip-path: polygon(0% 0%, 30% 0%, 100% 50%, 100% 99%, 0% 100%);
+}
+
+
+
+
+
+
+.first-hover-container1:hover{
+    border: 1px solid #00a0aa;
+}
+
+
+.first-hover-container2:hover{
+    background-color: blue;
+}
+
+.first-doctor-image:hover .first-hover-container1 {
+  border: 1px solid #00a0aa;
+}
+
+.first-doctor-image:hover .first-hover-container2 {
+  background-color: blue;
+}
 
 .second-doctor-container{
     border: 1px solid;
@@ -147,7 +240,6 @@
 .second-doctor-container .doc2-info2{
     margin-top: 0px;
     font-size: 12px;
-    text-align: left;
 } 
 
 
@@ -186,7 +278,6 @@
 .third-doctor-container .doc3-info2{
     margin-top: 0px;
     font-size: 12px;
-    text-align: left;
 } 
 
 
@@ -224,7 +315,6 @@
 .fourth-doctor-container .doc4-info2{
     margin-top: 0px;
     font-size: 12px;
-    text-align: left;
 } 
 
 
@@ -263,5 +353,16 @@
 .fifth-doctor-container .doc5-info2{
     margin-top: 0px;
     font-size: 12px;
-    text-align: left;
-} 
+}
+
+/* .doctor-overlay .social-icons{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+
+
+
+

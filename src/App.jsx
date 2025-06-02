@@ -5,6 +5,8 @@ import HealthServices from "./components/HealthServices";
 import Schedule from "./components/Schedule";
 import WhyChoose from "./components/WhyChoose";
 import Consultants from "./components/Consultants";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 
