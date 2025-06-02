@@ -1,0 +1,49 @@
+.consultants-container{
+    padding: 20px;
+}
+
+.consultants-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.two-consultants-arrow{
+   align-content: center;
+}
+
+
+.button1 svg{
+    justify-self: center;
+}
+
+.button2 svg{
+    justify-self: center;
+}
+
+.button1{
+    border: 1px solid #00a0aa;
+    margin: 20px;
+    gap: 20px;
+    background-color: #00a0aa; 
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+}
+
+.button2{
+    border: 1px solid #00a0aa;
+    border-radius: 8px;
+    background-color: #00a0aa; 
+    padding: 5px 13px 5px 13px;
+}
+
+.button1:hover{
+    cursor: pointer;
+    background-color: #076067;
+}
+
+.button2:hover{
+    cursor: pointer;
+    background-color: #076067;
+}

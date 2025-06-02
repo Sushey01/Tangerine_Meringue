@@ -4,6 +4,7 @@ import Journey from "./components/Journey";
 import HealthServices from "./components/HealthServices";
 import Schedule from "./components/Schedule";
 import WhyChoose from "./components/WhyChoose";
+import Consultants from "./components/Consultants";
 
 
 
@@ -15,7 +16,7 @@ export default function App(){
       <HealthServices/>
       <Schedule/>
       <WhyChoose/>
-
+      <Consultants/>
     </div>
   )
 }
