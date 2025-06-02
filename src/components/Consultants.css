@@ -9,6 +9,12 @@
 }
 
 
+.consultants-title h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
 .two-consultants-arrow{
    align-content: center;
 }
@@ -47,3 +53,215 @@
     cursor: pointer;
     background-color: #076067;
 }
+
+
+
+.paragraph{
+    font-size: 15px;
+    font-weight: 400;
+    /* text-align: justify; */
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.five-doctor-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.first-doctor-container:hover{
+    background-color: purple;
+    transition: 0.3s;
+}
+
+.first-doctor-container{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.first-doctor-image{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.first-doctor-info{
+    border: 1px solid;
+}
+
+.first-doctor-info h4{
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.first-doctor-container .doc1-info1{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+}
+
+.first-doctor-container .doc1-info2{
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: left;
+} 
+
+.second-doctor-container{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.second-doctor-image{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.second-doctor-info{
+    border: 1px solid;
+}
+
+.second-doctor-info h4{
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.second-doctor-container .doc2-info1{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+}
+
+.second-doctor-container .doc2-info2{
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: left;
+} 
+
+
+.third-doctor-container{
+    border: 1px solid;
+    padding: 10px;
+}
+
+
+.third-doctor-image{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.third-doctor-info{
+    border: 1px solid;
+}
+
+.third-doctor-info h4{
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.third-doctor-container .doc3-info1{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+}
+
+.third-doctor-container .doc3-info2{
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: left;
+} 
+
+
+.fourth-doctor-container{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.fourth-doctor-image{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.fourth-doctor-info{
+    border: 1px solid;
+}
+
+.fourth-doctor-info h4{
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.fourth-doctor-container .doc4-info1{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+}
+
+.fourth-doctor-container .doc4-info2{
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: left;
+} 
+
+
+
+.fifth-doctor-container{
+    border: 1px solid;
+    padding: 10px;
+}
+
+.fifth-doctor-image{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.fifth-doctor-info{
+    border: 1px solid;
+}
+
+.fifth-doctor-info h4{
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.fifth-doctor-container .doc5-info1{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+}
+
+.fifth-doctor-container .doc5-info2{
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: left;
+} 
