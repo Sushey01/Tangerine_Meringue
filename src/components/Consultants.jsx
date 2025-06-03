@@ -87,6 +87,7 @@ const Consultants = () => {
         {
             breakpoint:480,
             settings: {
+                dots:false,
                 slidesToScroll:1,
                 slidesToShow:1
             }
