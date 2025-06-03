@@ -71,12 +71,12 @@
 
 
 
-@media(max-width:645px){
+/* @media(max-width:645px){
     .five-doctor-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
 
 
