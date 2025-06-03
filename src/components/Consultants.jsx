@@ -1,10 +1,23 @@
 import React from "react";
 import "./Consultants.css";
+import DoctorCard from "./DoctorCard";
 import Doctor1 from "../assets/images/doctr1.png";
 import Doctor2 from "../assets/images/doctr2.png";
 import Doctor3 from "../assets/images/doctr3.png";
 import Doctor4 from "../assets/images/doctr4.png";
 import Doctor5 from "../assets/images/doctr5.png";
+
+
+
+const doctors =[
+    {name: "Dr. Sanduk Ruit", image:Doctor1, info1: "Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
+    {name: "Dr. Bhagwan Koirala", image:Doctor2, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
+    {name: "Dr. Prabin Bikram Thapa", image:Doctor3, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
+    {name: "Dr. Prabin Bikram Thapa", image:Doctor4, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
+    {name: "Dr. Prabin Bikram Thapa", image:Doctor5, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
+]
+
+
 
 const Consultants = () => {
   return (
@@ -61,81 +74,59 @@ const Consultants = () => {
           online
         </p>
 
+       
+ 
+
         <div className="five-doctor-container">
-          <div className="first-doctor-container">
-            <div className="first-doctor-image">
-              <img src={Doctor1}></img>
-              
-                <div className="social-icons">
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </div>
-              
-            <div className="first-hover-container1"></div>
-            <div className="first-hover-container2"></div>
-            </div>
-            <div className="first-doctor-info">
-              <h4>Dr. Sanduk Ruit</h4>
-            </div>
-            <p className="doc1-info1">Pediatric Surgery (MBBS, MS)</p>
-            <p className="doc1-info2">Chief Consultant, Head of General (GI)</p>
+       
 
-          </div>
+            <DoctorCard
+                image={Doctor1}
+                name="Dr. Sanduk Ruit"
+                info1="Pediatric Surgery (MBBS, MS)"
+                info2="Chief Consultant, Head of General (GI)"
+                />
 
-          <div className="second-doctor-container">
-            <div className="second-doctor-image">
-              <img src={Doctor2}></img>
-            </div>
-            <div className="second-doctor-info">
-              <h4>Dr. Bhagwan Koirala</h4>
-            </div>
-            <p className="doc2-info1">Pediatric Surgery (MBBS, MS)</p>
-            <p className="doc2-info2">Chief Consultant, Head of General (GI)</p>
-          </div>
 
-          <div className="third-doctor-container">
-            <div className="third-doctor-image">
-              <img src={Doctor3}></img>
-            </div>
-            <div className="third-doctor-info">
-              <h4>Dr. Prabin Bikram Thapa</h4>
-            </div>
-            <p className="doc3-info1">Pediatric Surgery (MBBS, MS)</p>
-            <p className="doc3-info2">Chief Consultant, Head of General (GI)</p>
-          </div>
-          <div className="fourth-doctor-container">
-            <div className="fourth-doctor-image">
-              <img src={Doctor4}></img>
-            </div>
-            <div className="fourth-doctor-info">
-              <h4>Dr. Prabin Bikram Thapa</h4>
-            </div>
-            <p className="doc4-info1">Pediatric Surgery (MBBS, MS)</p>
-            <p className="doc4-info2">Chief Consultant, Head of General (GI)</p>
-          </div>
-          <div className="fifth-doctor-container">
-            <div className="fifth-doctor-image">
-              <img src={Doctor5}></img>
-            </div>
-            <div className="fifth-doctor-info">
-              <h4>Dr. Prabin Bikram Thapa</h4>
-            </div>
-            <p className="doc5-info1">Pediatric Surgery (MBBS, MS)</p>
-            <p className="doc5-info2">Chief Consultant, Head of General (GI)</p>
-          </div>
+                <DoctorCard
+                image={Doctor2}
+                name="Dr.Bhagwan Koirala"
+                info1="Pediatric Surgery (MBBS, MS)"
+                info2="Chief Consultant, Head of General (GI)"
+                />
+
+                 <DoctorCard
+                image={Doctor3}
+                name="Dr. Prabin Bikram Thapa"
+                info1="Pediatric Surgery (MBBS, MS)"
+                info2="Chief Consultant, Head of General (GI)"
+                />
+
+                 <DoctorCard
+                image={Doctor4}
+                name="Dr.Bhagwan Koirala"
+                info1="Pediatric Surgery (MBBS, MS)"
+                info2="Chief Consultant, Head of General (GI)"
+                />
+
+                 <DoctorCard
+                image={Doctor5}
+                name="Dr.Bhagwan Koirala"
+                info1="Pediatric Surgery (MBBS, MS)"
+                info2="Chief Consultant, Head of General (GI)"
+                />
+
+
+
+          
+            
+
+          
         </div>
       </div>
     </section>
+
+
   );
 };
 

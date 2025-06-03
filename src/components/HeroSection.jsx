@@ -41,7 +41,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="doctor-image">
+        <div className="hero-section-doctor-image">
           <img src={Bannerdoctr} />
         </div>
 

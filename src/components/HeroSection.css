@@ -122,11 +122,11 @@
 
 }
 
-.doctor-image{
+.hero-section-doctor-image{
     width: 50%;
 }
 
-.doctor-image img{
+.hero-section-doctor-image img{
     padding-left: 60px;
     overflow-clip-margin: content-box;
     vertical-align: middle;
@@ -160,7 +160,7 @@
 
 
 
-    .doctor-image{
+    .hero-section-doctor-image{
         display: none;
     }
 
