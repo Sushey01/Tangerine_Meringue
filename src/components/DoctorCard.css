@@ -118,17 +118,16 @@
 
 
 
- @media(max-width:645px){
+ /* @media(max-width:645px){
     .doctor-container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 170px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
 .doctor-image{
     position: relative;
-    height: 170px;
+    height: 200px;
 }
 
 .doctor-image img{
@@ -236,4 +235,4 @@
     text-align: center;
 }
 
-} 
+ } */

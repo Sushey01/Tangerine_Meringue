@@ -71,12 +71,27 @@
 
 
 
-/* @media(max-width:645px){
-    .five-doctor-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+@media(max-width:645px){
+
+    .consultants-title{
+        display: flex;
+        flex-direction: column;
     }
-} */
+
+    .consultants-title h1{
+        margin-bottom: 0px;
+    }
+
+    .two-consultants-arrow{
+        align-self: flex-end;
+    }
+
+
+    .five-doctor-container{
+        width: 100%;
+        padding-left: 50px;
+    }
+}
 
 
 
