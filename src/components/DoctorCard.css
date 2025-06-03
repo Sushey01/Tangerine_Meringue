@@ -5,13 +5,13 @@
 
 .doctor-image{
     position: relative;
-    height: 300px;
+    height: 280px;
 }
 
 .doctor-image img{
     position: absolute;
      z-index: 999;
-     height: 85%;
+     height: 83%;
      margin: auto;
      top: 50%;
      left: 50%;
@@ -71,7 +71,7 @@
   position: absolute;
   z-index: 999;
   top: 50%;
-  left: 85%;
+  left: 86%;
   transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
