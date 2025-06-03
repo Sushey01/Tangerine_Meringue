@@ -10,7 +10,7 @@ const Journey = () => {
   return (
     <section className="section1">
       <div className="journey-container">
-        <div className="doctor-container">
+        <div className="journey-doctor-container">
           <div className="image-wrapper">
             <img src={JourneyDoctor} alt="Doctor" className="floating-image" />
             <div className="yellow-container"></div>

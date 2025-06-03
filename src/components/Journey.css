@@ -13,7 +13,7 @@
   height: 100%;
 }
 
-.doctor-container {
+.journey-doctor-container {
   width: 45%;
   position: relative;
   padding: 20px;
@@ -175,7 +175,7 @@
   }
 
 
-  .doctor-container{
+  .journey-doctor-container{
     width: 100%;
   }
 

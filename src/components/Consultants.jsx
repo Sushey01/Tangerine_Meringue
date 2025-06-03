@@ -6,21 +6,69 @@ import Doctor2 from "../assets/images/doctr2.png";
 import Doctor3 from "../assets/images/doctr3.png";
 import Doctor4 from "../assets/images/doctr4.png";
 import Doctor5 from "../assets/images/doctr5.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const doctors = [
+  {
+    name: "Dr. Sanduk Ruit",
+    image: Doctor1,
+    info1: "Pediatric Surgery (MBBS, MS)",
+    info2: "Chief Consultant, Head of General",
+  },
+  {
+    name: "Dr. Bhagwan Koirala",
+    image: Doctor2,
+    info1: "Pediatric Surgery (MBBS, MS)",
+    info2: "Chief Consultant, Head of General",
+  },
+  {
+    name: "Dr. Prabin Bikram Thapa",
+    image: Doctor3,
+    info1: "Pediatric Surgery (MBBS, MS)",
+    info2: "Chief Consultant, Head of General",
+  },
+  {
+    name: "Dr. Prabin Bikram Thapa",
+    image: Doctor4,
+    info1: "Pediatric Surgery (MBBS, MS)",
+    info2: "Chief Consultant, Head of General",
+  },
+  {
+    name: "Dr. Prabin Bikram Thapa",
+    image: Doctor5,
+    info1: "Pediatric Surgery (MBBS, MS)",
+    info2: "Chief Consultant, Head of General",
+  },
+];
 
 
+// const CustomPrevArrow = ({ onClick }) => (
+//   <button className="custom-prev" onClick={onClick}>
+//     ◀
+//   </button>
+// );
 
-const doctors =[
-    {name: "Dr. Sanduk Ruit", image:Doctor1, info1: "Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
-    {name: "Dr. Bhagwan Koirala", image:Doctor2, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
-    {name: "Dr. Prabin Bikram Thapa", image:Doctor3, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
-    {name: "Dr. Prabin Bikram Thapa", image:Doctor4, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
-    {name: "Dr. Prabin Bikram Thapa", image:Doctor5, info1:"Pediatric Surgery (MBBS, MS)", info2:"Chief Consultant, Head of General"},
-]
-
-
+// const CustomNextArrow = ({ onClick }) => (
+//   <button className="custom-next" onClick={onClick}>
+//     ▶
+//   </button>
+// );
 
 const Consultants = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    // prevArrow: <CustomPrevArrow />,
+    // nextArrow: <CustomNextArrow />,
+  };
+
   return (
+
     <section className="section5">
       <div className="consultants-container">
         <div className="consultants-title">
@@ -73,61 +121,31 @@ const Consultants = () => {
           are highly experienced and experts. We are providing high-quality
           online
         </p>
-
-       
- 
-
-        <div className="five-doctor-container">
-       
-
-            <DoctorCard
-                image={Doctor1}
-                name="Dr. Sanduk Ruit"
-                info1="Pediatric Surgery (MBBS, MS)"
-                info2="Chief Consultant, Head of General (GI)"
-                />
-
-
-                <DoctorCard
-                image={Doctor2}
-                name="Dr.Bhagwan Koirala"
-                info1="Pediatric Surgery (MBBS, MS)"
-                info2="Chief Consultant, Head of General (GI)"
-                />
-
-                 <DoctorCard
-                image={Doctor3}
-                name="Dr. Prabin Bikram Thapa"
-                info1="Pediatric Surgery (MBBS, MS)"
-                info2="Chief Consultant, Head of General (GI)"
-                />
-
-                 <DoctorCard
-                image={Doctor4}
-                name="Dr.Bhagwan Koirala"
-                info1="Pediatric Surgery (MBBS, MS)"
-                info2="Chief Consultant, Head of General (GI)"
-                />
-
-                 <DoctorCard
-                image={Doctor5}
-                name="Dr.Bhagwan Koirala"
-                info1="Pediatric Surgery (MBBS, MS)"
-                info2="Chief Consultant, Head of General (GI)"
-                />
-
-
-
-          
-            
-
-          
-        </div>
       </div>
+      <div className="five-doctor-container">
+      <Slider {...settings}>
+        {doctors.map((doc, index) => (
+          <DoctorCard
+            key={index}
+            image={doc.image}
+            name={doc.name}
+            info1={doc.info1}
+            info2={doc.info2}
+          />
+        ))}
+      </Slider>
+    </div>
+        
     </section>
-
-
   );
 };
 
 export default Consultants;
+
+
+//  <DoctorCard
+//                 image={Doctor5}
+//                 name="Dr.Bhagwan Koirala"
+//                 info1="Pediatric Surgery (MBBS, MS)"
+//                 info2="Chief Consultant, Head of General (GI)"
+//                 /> 

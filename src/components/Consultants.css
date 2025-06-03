@@ -1,8 +1,7 @@
-
-
-.consultants-container{
+.section5{
     padding: 20px;
 }
+
 
 .consultants-title{
     display: flex;
@@ -66,7 +65,17 @@
 }
 
 .five-doctor-container{
-    display: flex;
+    width: 100%;
+}
+
+
+
+
+@media(max-width:645px){
+    .five-doctor-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 

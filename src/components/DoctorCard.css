@@ -5,13 +5,13 @@
 
 .doctor-image{
     position: relative;
-    height: 280px;
+    height: 270px;
 }
 
 .doctor-image img{
     position: absolute;
      z-index: 999;
-     height: 83%;
+     height: 85%;
      margin: auto;
      top: 50%;
      left: 50%;
@@ -71,7 +71,7 @@
   position: absolute;
   z-index: 999;
   top: 50%;
-  left: 86%;
+  left: 82%;
   transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
@@ -114,4 +114,127 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+
+
+@media(max-width:645px){
+    .doctor-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 170px;
+    }
+
+
+.doctor-image{
+    position: relative;
+    height: 170px;
+}
+
+.doctor-image img{
+    position: absolute;
+     z-index: 999;
+     height: 85%;
+     margin: auto;
+     top: 50%;
+     left: 50%;
+     transform: translate(
+        -50%,-50%
+     );
+} 
+
+
+.second-hover-box{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #ced4da;
+    z-index: 99;
+     clip-path: polygon(0% 0%, 30% 0%, 100% 50%, 100% 99%, 0% 100%);
+} 
+
+.first-hover-box{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 85%;
+    border-radius: 10px;
+    background-color:#eaeced;
+    z-index: 9;
+} 
+
+
+
+
+.first-hover-box:hover{
+    background-color: blue;
+}
+
+
+.second-hover-box:hover{
+    border: 1px solid #00a0aa;
+}
+
+
+
+
+.doctor-image:hover .first-hover-box {
+  border: 1px solid #00a0aa;
+}
+
+.doctor-image:hover .second-hover-box {
+  background-color: blue;
+}
+
+
+.social-icons {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* transition: all 0.3s ease; */
+}
+
+.social-icons a {
+  color: blue;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 15%;
+  text-align: center;
+}
+
+
+.doctor-image:hover .social-icons {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.doctor-information{
+    justify-items: center;
+    width: 100%;
+}
+
+.doctor-information h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(39, 37, 37);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.doctor-information p{
+    font-size: 9px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 }
