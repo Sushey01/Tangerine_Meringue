@@ -31,6 +31,7 @@ const Department = () => {
             {departmentData.map((dept, index) => (
                 <DepartmentCard key={index} image={dept.image} title={dept.title}/>
             ))}
+
         </div>
        
       </div>

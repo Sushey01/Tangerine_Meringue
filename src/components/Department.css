@@ -34,7 +34,41 @@
 
 .five-department-card{
     display: flex;
-    gap: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    justify-content: space-around;
+}
+
+
+@media(max-width:645px){
+
+    .section6{
+        height: auto;
+        overflow: auto;
+    }
+
+    .department-paragraph{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .department-container{
+        height: auto;
+    }
+
+   
+
+    .five-department-card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hide all except the first card  */
+     /* .five-department-card > *:not(:first-child){
+        display: none;
+    } */
 }
 
 
