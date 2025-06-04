@@ -71,6 +71,22 @@
     } */
 }
 
+@media(max-width:1020px){
+
+    .department-container{
+        padding: 10px;
+    }
+    .department-paragraph{
+        padding: 0px;
+    }
+
+    .five-department-card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+}
+
 
 
 
