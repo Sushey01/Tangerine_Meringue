@@ -14,12 +14,12 @@ import Department from "./components/Department";
 export default function App(){
   return(
     <div>
-       {/* <HeroSection/>
+       <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
       <WhyChoose/>
-      <Consultants/> */}
+      <Consultants/>
       <Department/>
     </div>
   )
