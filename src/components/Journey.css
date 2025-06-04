@@ -198,3 +198,26 @@
     padding: 20px;
   }
 }
+
+
+@media(max-width:1024px){
+
+.journey-doctor-container{
+  width: 65%;
+  height: auto;
+  padding: 0px;
+}
+
+
+.same-patient-total-count{
+  width: 100%;
+}
+
+.same-patient-count{
+  width: 100%;
+}
+
+  .journey-content p{
+    padding-bottom: 0px;
+  }
+}

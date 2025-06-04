@@ -171,10 +171,27 @@
 
         }
 
- 
-    
+}
 
 
+@media(max-width:1024px){
 
+    .health-content h1{
+        font-size: 30px;
+    }
+     .hero-section-doctor-image{
+        width: 50%;
+    }
+
+    .hero-section-doctor-image img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .patient-total-count{
+        position: absolute;
+        bottom: 0;
+       right: 40%;
+    }
 
 }
