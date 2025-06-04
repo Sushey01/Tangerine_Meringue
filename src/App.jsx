@@ -19,7 +19,7 @@ export default function App(){
       <HealthServices/>
       <Schedule/>
       <WhyChoose/>
-      <Consultants/>
+      {/* <Consultants/> */}
       <Department/>
     </div>
   )
