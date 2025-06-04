@@ -1,0 +1,47 @@
+.section6{
+    background-color: rgb(86, 113, 223);
+    height: 100vh;
+}
+
+.department-container{
+    /* padding: 0 20px; */
+    background-color: #0853c3;
+    margin: 0 20px;
+    height: 85vh;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.department-title{
+    justify-self: center;
+    margin-top: 0px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.department-header, .department-paragraph{
+    text-align: center;
+    padding: 0 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+
+.five-department-card{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+
+.emergency-department-container{
+    position: relative;
+    bottom: -25%;
+    transform: translateY(15%);
+    border: 2px solid transparent;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    justify-content: center;
+    transition: transform .3s ease, box-shadow .3s ease;
+    border-radius: 15px;
+}
+
+.emergency-department-container:hover{
+    background-color: #00a0aa;
+    border: 2px solid #fff;
+        transition: 0.5s ease;
+    transform: scale(1);
+    box-shadow: 0 2px 5px 3px #0000001a;
+}
+
+.emergency-department-container h3{
+    align-self: center;
+    font-size: 21px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.heart-circle{
+    border: 1px solid #ebdcdc;
+    background-color: #ebdcdc;
+    border-radius: 100%;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.heart-logo{
+    align-self: center;
+    padding-top: 30px;
+}
+
+.view-details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.view-details h4{
+    font-weight: 400;
+}
+
+.view-details:hover{
+    cursor: pointer;
+}
+

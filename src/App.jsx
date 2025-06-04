@@ -6,6 +6,7 @@ import Schedule from "./components/Schedule";
 import WhyChoose from "./components/WhyChoose";
 import Consultants from "./components/Consultants";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Department from "./components/Department";
 
 
 
@@ -13,12 +14,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 export default function App(){
   return(
     <div>
-       <HeroSection/>
+       {/* <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
       <WhyChoose/>
-      <Consultants/>
+      <Consultants/> */}
+      <Department/>
     </div>
   )
 }
