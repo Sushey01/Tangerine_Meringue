@@ -66,12 +66,25 @@
 
 .five-doctor-container{
     width: 100%;
+    /* overflow: hidden; */
+}
+
+
+
+.five-doctor-container .slick-list {
+  margin: 0 -10px;
 }
 
 
 
 
+
+
 @media(max-width:645px){
+
+   .section5{
+    padding: 10px;
+   }
 
     .consultants-title{
         display: flex;
@@ -89,8 +102,10 @@
 
     .five-doctor-container{
         width: 100%;
-        padding-left: 50px;
+        overflow-x: hidden;
     }
+
+
 }
 
 

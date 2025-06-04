@@ -46,13 +46,43 @@ const doctors = [
 
 // const CustomPrevArrow = ({ onClick }) => (
 //   <button className="custom-prev" onClick={onClick}>
-//     ◀
+//     <svg
+//                 xmlns="http://www.w3.org/2000/svg"
+//                 width="20"
+//                 height="20"
+//                 color="#blue"
+//                 viewBox="0 0 24 24"
+//                 fill="none"
+//                 stroke="currentColor"
+//                 stroke-width="2"
+//                 stroke-linecap="round"
+//                 stroke-linejoin="round"
+//                 class="lucide lucide-arrow-left-icon lucide-arrow-left"
+//               >
+//                 <path d="m12 19-7-7 7-7" />
+//                 <path d="M19 12H5" />
+//               </svg>
 //   </button>
 // );
 
 // const CustomNextArrow = ({ onClick }) => (
 //   <button className="custom-next" onClick={onClick}>
-//     ▶
+//     <svg
+//                 xmlns="http://www.w3.org/2000/svg"
+//                 width="20"
+//                 height="20"
+//                 color="blue"
+//                 viewBox="0 0 24 24"
+//                 fill="none"
+//                 stroke="currentColor"
+//                 stroke-width="2"
+//                 stroke-linecap="round"
+//                 stroke-linejoin="round"
+//                 class="lucide lucide-arrow-right-icon lucide-arrow-right"
+//               >
+//                 <path d="M5 12h14" />
+//                 <path d="m12 5 7 7-7 7" />
+//               </svg>
 //   </button>
 // );
 
@@ -63,6 +93,7 @@ const Consultants = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
+    
     // prevArrow: <CustomPrevArrow />,
     // nextArrow: <CustomNextArrow />,
 
@@ -89,7 +120,8 @@ const Consultants = () => {
             settings: {
                 dots:false,
                 slidesToScroll:1,
-                slidesToShow:1
+                slidesToShow:1.5,
+                
             }
         }
     ]
@@ -162,6 +194,44 @@ const Consultants = () => {
           />
         ))}
       </Slider>
+      {/* <div className="another-two-consultants-arrow">
+            <button className="button1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                color="#fff"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-left-icon lucide-arrow-left"
+              >
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+            </button>
+            <button className="button2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                color="#fff"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right-icon lucide-arrow-right"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </button>
+          </div> */}
     </div>
         
     </section>

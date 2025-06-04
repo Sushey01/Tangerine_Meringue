@@ -4,7 +4,9 @@ import './DoctorCard.css';
 export default function DoctorCard({ name, image, info1, info2 }) {
   return (
     <div className="doctor-container">
+      
       <div className="doctor-card">
+        
         <div className="doctor-image">
           <img src={image}></img>
           <div className="social-icons">

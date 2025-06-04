@@ -117,6 +117,12 @@
 }
 
 
+@media(max-width:645px){
+  .doctor-container{
+    width: 300px;
+  }
+}
+
 
  /* @media(max-width:645px){
     .doctor-container{
