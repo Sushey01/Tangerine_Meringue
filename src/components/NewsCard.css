@@ -69,10 +69,10 @@
 
 @media(min-width:646px){
     .news-box-container{
-        width: 80%;
+        padding: 10px;
     }
 
     .news-image-box img{
-        width: 300px;
+        width: 330px;
     }
 }

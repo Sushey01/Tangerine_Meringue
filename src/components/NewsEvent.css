@@ -27,6 +27,7 @@
 @media(min-width:646px){
     .three-news-box-container{
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         justify-content: center;
