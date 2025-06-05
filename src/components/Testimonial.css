@@ -1,6 +1,6 @@
 .section10{
     background-image: url(../assets/images/testominialbg.png);
-    overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 .testimonial-container{
@@ -43,12 +43,22 @@
 
 
 .testimonial-content{
+    /* position: absolute; */
     width: 70%;
     justify-self: center;
     border: 1px solid #234cbb;
+    /* clip-path: polygon(0 68%,0% 100%,23% 100%); */
     border-radius: 35px;
-    padding: 15px;
+    padding: 25px;
     background: linear-gradient(100.44deg,#234cbb 2.88%,#00a0aa 104.18%);
+}
+
+
+.testimonial-content p{
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 
@@ -67,6 +77,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.image-content1 h2{
+    color: #fff;
 }
 
 
