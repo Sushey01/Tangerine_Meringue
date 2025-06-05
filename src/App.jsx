@@ -19,7 +19,7 @@ import Footer from "./components/Footer";
 export default function App(){
   return(
     <div>
-       <HeroSection/>
+      <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
@@ -29,7 +29,7 @@ export default function App(){
       <OurCapacity/> 
        <NewsEvent/> 
        <Faq/> 
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <Footer/>
     </div>
   )
