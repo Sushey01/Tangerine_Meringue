@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Department from "./components/Department";
 import OurCapacity from "./components/OurCapacity";
 import NewsEvent from "./components/NewsEvent";
+import Faq from "./components/Faq";
 
 
 
@@ -24,7 +25,8 @@ export default function App(){
       <Consultants/> */}
       {/* <Department/>
       <OurCapacity/> */}
-      <NewsEvent/>
+      {/* <NewsEvent/> */}
+      <Faq/>
     </div>
   )
 }
