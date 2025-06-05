@@ -25,7 +25,7 @@
 
 .first-faq-container{
     border: 1px solid #fff;
-    padding:30px 20px 20px 20px;
+    padding:30px 30px 20px 20px;
     background-color: #fff;
     border-radius:5px;
     display: flex;
@@ -33,32 +33,104 @@
     align-items: center;
 }
 
+.first-faq-container h2{
+    color: #234CBB;
+    font-size:20px;
+    font-weight:600;
+}
+
+
+
 .second-faq-container{
     border: 1px solid #fff;
-    padding:30px 20px 20px 20px;
+    padding:30px 30px 20px 20px;
     background-color: #fff;
     border-radius:5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.second-faq-container h2{
+    color: #234CBB;
+    font-size:20px;
+    font-weight:600;
 }
 
 .third-faq-container{
     border: 1px solid #fff;
-    padding:30px 20px 20px 20px;
+    padding:30px 30px 20px 20px;
     background-color: #fff;
     border-radius:5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.third-faq-container h2{
+    color: #234CBB;
+    font-size:20px;
+    font-weight:600;
 }
 
 .fourth-faq-container{
     display: flex;
     border: 1px solid #fff;
-    padding:30px 20px 20px 20px;
+    padding:30px 30px 20px 20px;
     background-color: #fff;
     border-radius:5px;
     justify-content: space-between;
     align-items: center;
+}
+
+.fourth-faq-container h2{
+    color: #234CBB;
+    font-size:20px;
+    font-weight:600;
+}
+
+
+@media(max-width:645px){
+    .faq-title p{
+        text-align: justify;
+    }
+
+    .first-faq-container, .second-faq-container, .third-faq-container, .fourth-faq-container{
+        padding: 20px;
+    }
+
+    .first-faq-container h2{
+        font-size: 15px;
+    }
+
+    .second-faq-container h2{
+        font-size: 15px;
+    }
+
+    .third-faq-container h2{
+        font-size: 15px;
+    }
+
+    .fourth-faq-container h2{
+        font-size: 15px;
+    }
+}
+
+
+@media(min-width:646px) and (max-width:1024px){
+    .first-faq-container h2{
+        font-size: 16px;
+    }
+
+    .second-faq-container h2{
+        font-size: 16px;
+    }
+
+    .third-faq-container h2{
+        font-size: 16px;
+    }
+
+    .fourth-faq-container h2{
+        font-size: 16px;
+    }
 }
