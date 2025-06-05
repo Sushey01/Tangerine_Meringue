@@ -10,6 +10,7 @@ import Department from "./components/Department";
 import OurCapacity from "./components/OurCapacity";
 import NewsEvent from "./components/NewsEvent";
 import Faq from "./components/Faq";
+import Testimonial from "./components/Testimonial";
 
 
 
@@ -26,7 +27,8 @@ export default function App(){
       {/* <Department/>
       <OurCapacity/> */}
       {/* <NewsEvent/> */}
-      <Faq/>
+      {/* <Faq/> */}
+      <Testimonial/>
     </div>
   )
 }
