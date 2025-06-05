@@ -1,0 +1,36 @@
+.section8{
+    padding: 40px;
+}
+
+
+.news-title h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.three-news-box-container{
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width:645px){
+
+    .section8{
+        padding: 20px;
+    }
+    .three-news-box-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width:646px){
+    .three-news-box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+

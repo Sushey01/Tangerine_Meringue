@@ -1,0 +1,40 @@
+
+.capacity-main-box{
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+.capacity-box{
+    justify-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius:11px;
+    padding: 10px 0;
+    width: 230px;
+    background: #ffffff40;
+    backdrop-filter: blur(40px);
+}
+
+.capacity-content{
+    justify-items: center;
+
+}
+
+.capacity-content p{
+    font-size: 23px;
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+@media(max-width:645px){
+
+    .capacity-main-box{
+        padding: 0px;
+    }
+    .capacity-box{
+        width: 170px;
+    }
+}
+
+

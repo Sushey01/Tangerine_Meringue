@@ -7,6 +7,8 @@ import WhyChoose from "./components/WhyChoose";
 import Consultants from "./components/Consultants";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Department from "./components/Department";
+import OurCapacity from "./components/OurCapacity";
+import NewsEvent from "./components/NewsEvent";
 
 
 
@@ -14,13 +16,15 @@ import Department from "./components/Department";
 export default function App(){
   return(
     <div>
-       <HeroSection/>
+       {/* <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
       <WhyChoose/>
-      {/* <Consultants/> */}
-      <Department/>
+      <Consultants/> */}
+      {/* <Department/>
+      <OurCapacity/> */}
+      <NewsEvent/>
     </div>
   )
 }
