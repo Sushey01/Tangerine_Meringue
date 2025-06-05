@@ -11,6 +11,7 @@ import OurCapacity from "./components/OurCapacity";
 import NewsEvent from "./components/NewsEvent";
 import Faq from "./components/Faq";
 import Testimonial from "./components/Testimonial";
+import Footer from "./components/Footer";
 
 
 
@@ -18,17 +19,18 @@ import Testimonial from "./components/Testimonial";
 export default function App(){
   return(
     <div>
-       {/* <HeroSection/>
+       <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
       <WhyChoose/>
-      <Consultants/> */}
-      {/* <Department/>
-      <OurCapacity/> */}
-      {/* <NewsEvent/> */}
-      {/* <Faq/> */}
+      <Consultants/> 
+       <Department/>
+      <OurCapacity/> 
+       <NewsEvent/> 
+       <Faq/> 
       <Testimonial/>
+      <Footer/>
     </div>
   )
 }

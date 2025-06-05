@@ -24,7 +24,7 @@
     }
 }
 
-@media(min-width:646px) and (max-width:1024){
+@media(min-width:646px) and (max-width:1024px){
     .three-news-box-container{
         display: grid;
         width: 100%;
