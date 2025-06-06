@@ -16,7 +16,7 @@
 .three-service-content{
     display: flex;
     margin-right: 30px;
-    gap: 20px;
+    gap: 50px;
 }
 
 .appointment-info{
@@ -44,4 +44,30 @@
     color: #fff;
     gap: 5px;
     font-family: sans-serif;
+}
+
+
+@media(max-width:645px){
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .three-service-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
+
+@media(min-width:646px) and (max-width:1024px){
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }

@@ -24,7 +24,7 @@ export default function App(){
     <div>
       <MainNavHeader/>
     <Navbar/>
-      {/* <HeroSection/>
+      <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
@@ -34,7 +34,7 @@ export default function App(){
       <OurCapacity/> 
        <NewsEvent/> 
        <Faq/> 
-      <Testimonial/>
+      {/* <Testimonial/>
       <Footer/> */}
     </div>
   )
