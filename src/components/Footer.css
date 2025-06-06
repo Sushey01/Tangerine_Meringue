@@ -1,13 +1,70 @@
-.section11 {
-  background: linear-gradient(100.44deg, #234cbb 2.88%, #00a0aa 104.18%);
-  padding: 30px;
-  height: 100vh;
+.section11{
+  padding-top: 20px;
+}
+
+.footer-logo {
+  position: relative;
+  justify-items: center;
+}
+
+
+
+.footer-logo-wrapper{
+  position: absolute;
+left: 50%;
+top: 50%;
+margin-top: 70px;
+transform: translate(-50%, -50%);
+z-index: 99;
+}
+
+.footer-logo-wrapper img{
+  width: 200px;
+}
+
+.footer-logo-wrapper2 img{
+  width: 100px;
+}
+
+.footer-logo-wrapper2{
+  position: absolute;
+  z-index: 999;
+  bottom: 20%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkup-instrument{
+  position: absolute;
+right: 10%;
+margin-top: 8%;
+z-index: 9;
+}
+
+
+.checkup-instrument img{
+  width: 200px;
+  height: 200px;
+}
+
+
+.triangle{
+  display: flex;
+}
+
+.svg-down-div{
+  position: relative;
+  padding: 20px;
+    background: linear-gradient(100.44deg, #234cbb 2.88%, #00a0aa 104.18%)
 }
 
 .four-footer-containers {
   display: flex;
-  justify-content: space-evenly;
-  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: linear-gradient(100.44deg, #234cbb 2.88%, #00a0aa 104.18%);
+  /* height: auto; */
 }
 
 .two-depart-section {
@@ -38,6 +95,7 @@ p {
 .copy-right {
   border-top: 1px solid #fff;
   justify-items: center;
+  background: linear-gradient(100.44deg, #234cbb 2.88%, #00a0aa 104.18%);
 }
 
 .copy-right h3 {

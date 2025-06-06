@@ -43,13 +43,15 @@
 
 
 .testimonial-content{
-    /* position: absolute; */
+
     width: 70%;
     justify-self: center;
     border: 1px solid #234cbb;
     /* clip-path: polygon(0 68%,0% 100%,23% 100%); */
+    /* clip-path: polygon(0 2%, 100% 0%, 100% 100%, 25% 100%, 0 81%); */
     border-radius: 35px;
     padding: 25px;
+    margin-bottom: 50px;
     background: linear-gradient(100.44deg,#234cbb 2.88%,#00a0aa 104.18%);
 }
 
