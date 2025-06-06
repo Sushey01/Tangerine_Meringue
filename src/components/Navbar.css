@@ -85,6 +85,21 @@
         display: block;
         cursor: pointer;
     }
+
+    .nav-section,
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-section.show-menu,
+  .nav-button.show-menu {
+    display: flex;
+  }
+
+
+  
 }
 
 
@@ -97,6 +112,7 @@
         padding: 15px;
     }
 
+
     .nav-ham{
         display: flex;
         align-items: center;
@@ -104,13 +120,17 @@
         width: 100%;
     }
 
+    .nav-section,
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 
-
-
-    .nav-section{
-        display: flex;
-        flex-direction: column;
-    }
+  .nav-section.show-menu,
+  .nav-button.show-menu {
+    display: flex;
+  }
 
     .hamburger{
         display: block;
