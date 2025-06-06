@@ -1,0 +1,47 @@
+.main-nav{
+    background-color: #234cbb;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+.service-content{
+    color: #fff;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.three-service-content{
+    display: flex;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+.appointment-info{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.ticketing-info{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.map-info{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    font-family: sans-serif;
+}

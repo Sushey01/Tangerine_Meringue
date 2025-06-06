@@ -12,6 +12,9 @@ import NewsEvent from "./components/NewsEvent";
 import Faq from "./components/Faq";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import MainNavHeader from "./components/MainNavHeader";
+
 
 
 
@@ -19,7 +22,9 @@ import Footer from "./components/Footer";
 export default function App(){
   return(
     <div>
-      <HeroSection/>
+      <MainNavHeader/>
+    <Navbar/>
+      {/* <HeroSection/>
       <Journey/> 
       <HealthServices/>
       <Schedule/>
@@ -30,7 +35,7 @@ export default function App(){
        <NewsEvent/> 
        <Faq/> 
       <Testimonial/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
