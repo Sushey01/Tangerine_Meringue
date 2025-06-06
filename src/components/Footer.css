@@ -1,5 +1,6 @@
 .section11{
   padding-top: 20px;
+  overflow: hidden;
 }
 
 .footer-logo {
@@ -55,6 +56,7 @@ z-index: 9;
 
 .svg-down-div{
   position: relative;
+  /* border-color: #1f87b5; */
   padding: 20px;
     background: linear-gradient(100.44deg, #234cbb 2.88%, #00a0aa 104.18%)
 }
@@ -127,9 +129,6 @@ z-index: 9;
 }
 
 @media (max-width: 645px) {
-  .section11 {
-    padding: 20px;
-  }
 
   .four-footer-containers {
     display: grid;
@@ -137,6 +136,37 @@ z-index: 9;
     gap: 30px;
     padding: 10px;
   }
+
+
+  
+.footer-logo {
+  position: relative;
+  justify-items: center;
+}
+
+
+
+.footer-logo-wrapper{
+  position: absolute;
+left: 50%;
+top: 40%;
+transform: translate(-50%, -85%);
+z-index: 99;
+}
+
+  .footer-logo-wrapper img{
+  width: 100px;
+}
+
+.footer-logo-wrapper2 img{
+  width: 50px;
+}
+
+.checkup-instrument img{
+  width: 100px;
+  height: 100px;
+}
+
 
   .quick-link-box a,
   .one-depart a,

@@ -34,8 +34,8 @@ export default function App(){
       <OurCapacity/> 
        <NewsEvent/> 
        <Faq/> 
-      {/* <Testimonial/>
-      <Footer/> */}
+      <Testimonial/>
+      <Footer/>
     </div>
   )
 }

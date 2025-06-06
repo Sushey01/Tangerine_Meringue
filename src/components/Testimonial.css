@@ -1,6 +1,7 @@
 .section10{
     background-image: url(../assets/images/testominialbg.png);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .testimonial-container{
@@ -93,6 +94,50 @@
 .quote2-image img{
     width: 75px;
     height: 75px;
+}
+
+
+@media(max-width:645px){
+
+
+    .testimonial-container{
+        padding: 10px;
+    }
+
+
+    .testimonial-head{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .testimonial-head h1{
+        font-size: 25px;
+    }
+
+    .testimonial-button{
+        display: flex;
+        gap: 10px;
+        align-self: flex-end;
+        padding-right: 20px;
+    }
+
+    .testimonial-button1{
+        margin: 0;
+        padding: 8px;
+    }
+
+ 
+    .testimonial-content{
+        padding: 20px;
+        width: 300px;
+    }
+
+    .testimonial-content p{
+        font-size: 14px;
+        padding: 0px;
+    }
+        
 }
 
 
