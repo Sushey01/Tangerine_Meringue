@@ -48,7 +48,7 @@ const HealthServices = () => {
             </p>
             <button className="second-button">Read More</button>
             <div className="second-image">
-            <img src={CardDoc2}></img>
+            <img src={CardDoc2}/>
           </div>
           </div>
         </div>

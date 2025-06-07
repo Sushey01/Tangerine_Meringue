@@ -283,3 +283,44 @@
     }
 }
 
+
+@media(min-width:646px) and (max-width:1024px){
+    .six-health-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+    }
+
+
+     .first-image{
+        top: 12%;
+        left: 21%;
+    }
+
+    .second-image{
+        top: 11%;
+        left: 75%;
+    }
+
+
+
+    .third-image{
+        top: 45%;
+        right: 0;
+    }
+
+    .fourth-image{
+        top: 45%;
+        left: 18%;
+    }
+
+    .fifth-image{
+        top: 80%;
+        left: 22%;
+    }
+
+    .sixth-image{
+        top: 80%;
+    }
+}
+
