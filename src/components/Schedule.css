@@ -101,7 +101,8 @@
 
 
    .schdeule-container{
-        padding: 20px;
+    /* width: 100%; */
+        padding: 20px;  
         position: none;
     }
 
@@ -164,7 +165,8 @@
 
 
     .schdeule-container{
-        width: 100%;
+        width: auto;
+        padding: 20px;
     }
     .schedule-image-wrapper{
         position: relative;
@@ -188,6 +190,7 @@
 
     .schedule-content1{
         padding-bottom: 10px;
+        width: 40%;
     }
 }
 
