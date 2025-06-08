@@ -129,8 +129,14 @@
 
  
     .testimonial-content{
+        justify-content: center;
         padding: 20px;
         width: 300px;
+    }
+
+
+    .quote2-image{
+        display: none;
     }
 
     .testimonial-content p{
