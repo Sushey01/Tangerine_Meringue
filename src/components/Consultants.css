@@ -1,6 +1,5 @@
 .section5{
     padding: 20px;
-    overflow: hidden;
 }
 
 
@@ -84,7 +83,7 @@
 @media(max-width:645px){
 
    .section5{
-    padding: 10px;
+    padding: 15px;
    }
 
     .consultants-title{
@@ -98,6 +97,10 @@
 
     .two-consultants-arrow{
         align-self: flex-end;
+    }
+
+    .paragraph{
+        text-align: justify;
     }
 
 

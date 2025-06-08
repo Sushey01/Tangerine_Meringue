@@ -133,8 +133,8 @@ z-index: 9;
   .four-footer-containers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 10px;
+    gap: 20px;
+    padding: 20px;
   }
 
 
