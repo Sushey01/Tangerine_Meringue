@@ -2,9 +2,13 @@
 
 .nav-wrapper{
     border: 1px solid #fff;
+    /* width: 100%; */
+    display: flex;
+    /* position: fixed; */
 }
 
 .nav-content{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,9 +20,12 @@
 }
 
 .nav-section{
-    margin: 35px;
+    padding:10px;
+    margin-left: 15px;
+
+    align-items: center;
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 
@@ -26,7 +33,7 @@
     color: #555555;
     text-decoration: none;
     font-size: 16px;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 
@@ -36,10 +43,18 @@
 }
 
 .nav-section a:hover{
-    text-decoration: underline;
     color: #023AA2;
 
 }
+
+
+.about-us-dropdown{
+    position: relative;
+
+}
+
+
+
 
 .nav-button{
     margin: 20px;

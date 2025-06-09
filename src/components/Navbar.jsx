@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/images/logo.svg";
 import "./Navbar.css";
 import { useState } from "react";
+import NavHoverEffect from "./NavHoverEffect";
 
 const Navbar = () => {
 
@@ -42,22 +43,13 @@ const Navbar = () => {
           </div>
 
           <div className={`nav-section ${menuOpen ? "show-menu": ""}`}>
-            <a href="#" class="active">
-              Home
-            </a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Doctors</a>
-            <a href="#">Department</a>
-            <a href="#">Career</a>
-            <a href="#">Media</a>
-            <a href="#">Our Schedules</a>
-            <a href="#">Packages</a>
-          </div>
+            <NavHoverEffect/>
+            </div>
 
           <div className="nav-button">
             <button>Contact Us</button>
           </div>
+          
         </div>
       </div>
     </section>
