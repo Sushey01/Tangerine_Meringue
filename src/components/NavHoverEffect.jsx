@@ -5,7 +5,7 @@ const NavHoverEffect = () => {
   return (
     <>
       <div className="nav-hover">
-        <a href="#" className="active">
+        <a href="#" className="active main">
           Home
         </a>
       </div>
@@ -19,7 +19,7 @@ const NavHoverEffect = () => {
         }}
       >
         <div className="nav-hover-other">
-          <a href="#">About Us</a>
+          <a href="#" className="main">About Us</a>
           <div className="dropdown">
             <ul>
               <div className="drop1">

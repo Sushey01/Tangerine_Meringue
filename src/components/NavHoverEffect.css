@@ -5,8 +5,8 @@
   .li {
     list-style: none;
     padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 0px;
   }
 }
@@ -72,7 +72,7 @@
   background: none;
 }
 
-.nav-hover-other a::after {
+.nav-hover-other .main::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -85,7 +85,7 @@
   transition: clip-path 0.1s ease;
 }
 
-.nav-hover-other a:hover::after {
+.nav-hover-other .main:hover::after {
   clip-path: inset(0 0 0 0); /* reveal full bar */
 }
 
@@ -99,6 +99,7 @@
   border-radius: 5px;
   width: 200px;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .second-dropdown {
