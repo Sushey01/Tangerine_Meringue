@@ -37,10 +37,10 @@
         padding: 0px;
     }
     .capacity-box{
-        justify-items: center;
         align-items: center;
         align-content: center;
-        min-width: 185px;
+        width: 100%;
+        min-width: 160px;
     }
 }
 
