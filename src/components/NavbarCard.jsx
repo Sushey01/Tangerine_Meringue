@@ -1,139 +1,124 @@
 import React from "react";
-import "./NavHoverEffect.css";
+import "./NavbarCard.css";
 
 
 
-
-const renderMenuItems = (items)=> {
-  return (
-    <ul className="dropdown">
-      {items.map((item, index) => (
-        <li key={index} className={item.subItems ? "has-submenu" : ""}>
-          <a href={item.link}>{item.label}</a>
-          {item.subItems && renderMenuItems(item.subItems)}
-        </li>
-      ))}
-    </ul>
-  )
-}
-
-// const NavbarCard = ({ menuItems }) => {
-//   return (
-//     <>
-//       {menuItems.map((item, index) => {
-//         if (item.type === "dropdown") {
-//           return (
-//             <li
-//               className="drop"
-//               key={index}
-//               style={{
-//                 listStyle: "none",
-//                 position: "relative",
-//                 display: "inline-block",
-//               }}
-//             >
-//               <div className="nav-hover-other">
-//                 <a href={item.link} className="main">{item.label}</a>
-//                 {/* {renderMenuItems(item.items)} */}
-//                 <div className="dropdown">
-//                   <ul>
-//                     {item.items.map((subItem, subIndex) => {
-//                       if (subItem.subSubItems) {
-//                         return (
-//                           <div className="second-dropdown" key={subIndex}>
-//                             <a href={subItem.link}>{subItem.label}</a>
-//                             <ul className="second-dropdown-hover">
-//                               {subItem.subItems.map((nestedItem, nestedIndex) => (
-//                                 <li key={nestedIndex}>
-//                                   <a href={nestedItem.link}>{nestedItem.label}
-//                                   </a>
-//                                 </li>
-//                               ))}
-//                             </ul>
-//                           </div>
-//                         );
-//                       }
-//                       return (
-//                         <div className="drop1" key={subIndex}>
-//                           <a href={subItem.link}>{subItem.label}</a>
-//                         </div>
-//                       );
-//                     })}
-//                   </ul>
-//                 </div>
-//               </div>
-//             </li>
-//           );
-//         }
-
-//         return (
-//           <div className="nav-hover" key={index}>
-//             <a href={item.link} className={item.label === "Home" ? "active main" : ""}>
-//               {item.label}
-//             </a>
-//           </div>
-//         );
-//       })}
-//     </>
-//   );
-// };
 const NavbarCard = ({ menuItems }) => {
   return (
-    <div  style={{display:"flex",justifyContent:"space-evenly",position:"relative" }}>
-      {menuItems.map((item,index) => 
-      (
-        <ul key={index}>
-         <li>
-        {item.label}
-       </li>
-       { item.items && 
+    <>
+      {menuItems.map((item, index) => {
+        if (item.type === "dropdown") {
+          return (
+            <li
+              className="drop"
+              key={index}
+              style={{
+                listStyle: "none",
+                position: "relative",
+                display: "inline-block",
+              }}
+            >
+              <div className="nav-hover-other">
+                <a href={item.link} className="main">{item.label}</a>
+                <div className="dropdown">
+                  <ul>
+                    {item.items.map((subItem, subIndex) => {
+                      if (subItem.subSubItems) {
+                        return (
+                          <div className="second-dropdown" key={subIndex}>
+                            <a href={subItem.link}>{subItem.label}</a>
+                            <ul className="second-dropdown-hover">
+                              {subItem.subItems.map((nestedItem, nestedIndex) => (
+                                <li key={nestedIndex}>
+                                  <a href={nestedItem.link}>{nestedItem.label}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        );
+                      }
+                      return (
+                        <div className="drop1" key={subIndex}>
+                          <a href={subItem.link}>{subItem.label}</a>
+                        </div>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            </li>
+          );
+        }
 
-<ul style={{}}>
+        return (
+          <div className="nav-hover" key={index}>
+            <a href={item.link} className={item.label === "Home" ? "active main" : ""}>
+              {item.label}
+            </a>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+// const NavbarCard = ({ menuItems }) => {
+//   return (
+//     <div  style={{display:"flex",justifyContent:"space-evenly",position:"relative" }}>
+//       {menuItems.map((item,index) => 
+//       (
+//         <ul key={index}>
+//          <li>
+//         {item.label}
+//        </li>
+//        { item.items && 
 
- {item.items.map((subItem,subIndex) => (
+// <ul style={{}}>
 
-  <>
+//  {item.items.map((subItem,subIndex) => (
+
+//   <>
   
   
-    <div style={{background:"red",width:"200px"}} key={subIndex} id={subIndex}>
-            {subItem.label}
-            </div>
-       { subItem.subItems && 
-  <ul>
-    {subItem.subItems.map((ssitem,ssindex) => (
-      <>
+//     <div style={{width:"200px"}} key={subIndex} id={subIndex}>
+//             {subItem.label}
+//             </div>
+//        { subItem.subItems && 
+//   <ul>
+//     {subItem.subItems.map((ssitem,ssindex) => (
+//       <>
       
-      <li>{ssitem.label}</li>
-      {ssitem.subSubItems &&
-      <ul>
- {ssitem.subSubItems.map((sssitem,sssindex) => (
+//       <li>{ssitem.label}</li>
+//       {ssitem.subSubItems &&
+//       <ul>
+//  {ssitem.subSubItems.map((sssitem,sssindex) => (
 
 
-   <li>{sssitem.label}</li>
- ))}
-      </ul>}
+//    <li>{sssitem.label}</li>
+//  ))}
+//       </ul>}
      
 
-    </>
-    ))}
-  </ul>}
+//     </>
+//     ))}
+//   </ul>}
   
-  </>
+//   </>
         
-        ))}
+//         ))}
 
   
-</ul>}
+// </ul>}
        
           
 
         
-        </ul>
+//         </ul>
       
 
           
-      ))}
-    </div>
-  );
-};
+//       ))}
+//     </div>
+//   );
+// };
 export default NavbarCard;

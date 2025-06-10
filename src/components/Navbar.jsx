@@ -1,18 +1,88 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/images/logo.svg";
-import "./Navbar.css";
-import { useState } from "react";
-import NavHoverEffect from "./NavHoverEffect";
-import NavbarCard from './NavbarCard'
+import './Navbar.css'
+import NavbarCard from './NavbarCard';
+
+const menuItems = [
+  { label: "Home", link: "#", type: "single" },
+  {
+    label: "About Us",
+    link: "#",
+    type: "dropdown",
+    items: [
+      { label: "Overview", link: "#" },
+      {
+        label: "Mission and Vision",
+        link: "#",
+        subItems: [
+          { label: "Mission", link: "#" },
+          { label: "Vision", link: "#", 
+            subSubItems: [
+              {label: "Vision Details", link: "#"},
+              {label: "Vision Deep Dive",
+                link: "#",
+              }
+            ]
+           },
+        ],
+        
+      },
+      { label: "Core Values", link: "#" },
+      { label: "Chairman's Message", link: "#" },
+      { label: "Executive Committee", link: "#" },
+    ],
+  },
+  {
+    label: "Services",
+    link: "#",
+    type: "dropdown",
+    items: [
+      { label: "Clinical Services", link: "#" },
+      { label: "OT Services", link: "#" },
+      { label: "Pharmacy Services", link: "#" },
+      { label: "Physiotherapy Services", link: "#" },
+    ],
+  },
+  {
+    label: "Doctors",
+    link: "#",
+    type: "single"
+  },
+  {
+    label: "Department",
+    link: "#",
+    type: "dropdown",
+    items: [
+      { label: "Cardiology", link: "#" },
+      { label: "Aesthetic Medicine", link: "#" },
+      { label: "Cardiovascular", link: "#" },
+      { label: "Gynaecology", link: "#" },
+      { label: "Internal Medicine", link: "#" },
+    ],
+  },
+  {
+    label: "Career",
+    link: "#",
+    type: "single"
+  },
+  {
+    label: "Media",
+    link: "#",
+    type: "dropdown",
+    items: [
+      { label: "Image Gallery", link: "#" },
+      { label: "Video Gallery", link: "#" },
+      { label: "Blogs", link: "#" },
+    ],
+  },
+  { label: "Our Schedules", link: "#", type: "single" },
+  { label: "Packages", link: "#", type: "single" },
+];
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const [menuOpen, setMenuOpen] = useState(false);
-
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    }
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <section>
@@ -20,7 +90,6 @@ const Navbar = () => {
         <div className="nav-content">
           <div className="nav-ham">
             <img src={Logo} alt="logo" />
-
             <div className="hamburger" onClick={toggleMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,10 +99,9 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-square-menu-icon lucide-square-menu"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <rect width="18" height="18" x="3" y="3" rx="2" />
                 <path d="M7 8h10" />
@@ -43,15 +111,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className={`nav-section ${menuOpen ? "show-menu": ""}`}>
-            {/* <NavHoverEffect/> */}
-            <NavbarCard/>
-            </div>
+          <div className={`nav-section ${menuOpen ? "show-menu" : ""}`}>
+            <NavbarCard menuItems={menuItems} />
+          </div>
 
           <div className="nav-button">
             <button>Contact Us</button>
           </div>
-          
         </div>
       </div>
     </section>

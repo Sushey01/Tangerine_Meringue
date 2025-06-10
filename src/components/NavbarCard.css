@@ -1,0 +1,225 @@
+/* ---------- Dropdown Base Styles ---------- */
+.dropdown {
+  position: absolute;
+  display: none;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid #555555;
+  background-color: #fff;
+}
+
+.dropdown ul,
+.dropdown li {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+}
+
+/* ---------- Nav Links ---------- */
+.nav-hover a,
+.nav-hover-other a {
+  align-content: center;
+  padding: 12px 0;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+/* Underline effect (hidden by default) */
+.nav-hover a::after,
+.nav-hover-other .main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, blue 60%, cyan 40%);
+  border-radius: 3px;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.3s ease;
+}
+
+/* Show underline on hover/active */
+.nav-hover a.active::after,
+.nav-hover a:hover::after,
+.nav-hover-other .main:hover::after {
+  clip-path: inset(0 0 0 0);
+}
+
+/* ---------- Nav Wrapper & Layout ---------- */
+.nav-wrapper {
+  border: 1px solid #fff;
+  display: flex;
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.nav-ham {
+  display: flex;
+}
+
+.nav-section {
+  padding: 10px;
+  margin-left: 15px;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-section a.active {
+  color: #023AA2;
+  font-weight: 500;
+}
+
+.nav-section a:hover {
+  color: #023AA2;
+}
+
+/* ---------- Dropdown Hover Trigger ---------- */
+.drop:hover .dropdown {
+  display: block;
+  top: 80%;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* ---------- First-Level Dropdown Items ---------- */
+.drop1,
+.second-dropdown {
+  padding: 10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 12px;
+}
+
+.drop1:hover,
+.second-dropdown:hover {
+  background-color: #d6f9fb;
+  border-left: 5px solid #00a0aa;
+}
+
+.drop1 a:hover,
+.second-dropdown a:hover {
+  color: #212121;
+}
+
+.drop1:hover a::after,
+.second-dropdown:hover a::after {
+  background: none;
+}
+
+/* ---------- Second-Level Dropdown (Nested) ---------- */
+.second-dropdown-hover {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.second-dropdown:hover .second-dropdown-hover,
+.second-dropdown-hover:hover {
+  display: block;
+  cursor: pointer;
+}
+
+/* ---------- Button ---------- */
+.nav-button {
+  margin: 20px;
+}
+
+.nav-button button {
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #023AA2;
+  border: 1px solid #023AA2;
+  border-radius: 25px;
+}
+
+/* ---------- Hamburger Icon (Mobile) ---------- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 645px) {
+  .nav-content {
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .nav-ham {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-section,
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-section.show-menu,
+  .nav-button.show-menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 646px) and (max-width: 1024px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-ham {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-section,
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-section.show-menu,
+  .nav-button.show-menu {
+    display: flex;
+  }
+}
