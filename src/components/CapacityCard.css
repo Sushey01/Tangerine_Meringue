@@ -37,7 +37,8 @@
     }
     .capacity-box{
         min-width: 180px;
-        align-items: center;
+        align-content: center;
+        align-self: center;
         max-width: 200px;
     }
 }
