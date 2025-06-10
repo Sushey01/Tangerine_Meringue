@@ -7,11 +7,11 @@ const CapacityCard = ({image, title}) => {
   return (
     <div className="capacity-main-box">
           <div className="capacity-box">
-                        <img src={image} alt={title}/>
+                        {/* <img src={image} alt={title}/>
                         <div className="capacity-content">
                              <p>25</p>
                     <p>{title}</p>
-                        </div>
+                        </div> */}
                 </div>
     </div>
 
