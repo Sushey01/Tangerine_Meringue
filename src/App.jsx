@@ -24,7 +24,6 @@ export default function App(){
     <div>
       <MainNavHeader/>
      <Navbar/>
-    {/* <Navbar/> */}
       <HeroSection/>
       <Journey/> 
       <HealthServices/>

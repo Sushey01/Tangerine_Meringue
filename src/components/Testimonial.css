@@ -71,10 +71,12 @@
     justify-content: space-between;
 }
 
-.testimonial-doctor-image-container img{
-    width: 150px;
-    height: 150px;
+.testimonial-doctor-image-container img {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
 }
+
 
 .image-content{
     display: flex;
@@ -130,10 +132,12 @@
     }
 
  
-    .testimonial-content{
-        padding: 10px;
-        width: 300px;
-    }
+    .testimonial-content {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
 
 
     .quote2-image{
