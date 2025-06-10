@@ -10,7 +10,8 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius:11px;
     padding: 10px 0;
-    max-width: 210px;
+    min-width: 210px;
+    max-width: 250px;
     background: #ffffff40;
     backdrop-filter: blur(40px);
 }
@@ -33,7 +34,9 @@
         padding: 0px;
     }
     .capacity-box{
-        max-width: 170px;
+        min-width: 180px;
+        align-items: center;
+        max-width: 200px;
     }
 }
 
