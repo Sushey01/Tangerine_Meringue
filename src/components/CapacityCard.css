@@ -30,12 +30,14 @@
 
 @media(max-width:645px){
 
+
+
     .capacity-main-box{
         padding: 0px;
     }
     .capacity-box{
         min-width: 180px;
-        justify-content: center;
+        align-items: center;
         max-width: 200px;
     }
 }
