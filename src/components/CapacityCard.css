@@ -38,6 +38,7 @@
     .capacity-box{
         justify-items: center;
         align-items: center;
+        align-content: center;
         min-width: 185px;
     }
 }
