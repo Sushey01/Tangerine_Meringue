@@ -32,32 +32,14 @@
     .capacity-container{
         padding: 10px;
     }
-    .capacity-title{
-        justify-content: flex-start;
-    }
 
     .ten-capacity-boxes{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        overflow-x: hidden;
+        width: 100%;
     }
 }
-
-/* @media(max-width:645px){
-
-
-    .capacity-title{
-        justify-self: center;
-    }
-
-    .ten-capacity-boxes{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-   
-} */
 
 
 @media(min-width:646px) and (max-width:1024px){
