@@ -3,6 +3,7 @@ import Logo from "../assets/images/logo.svg";
 import "./Navbar.css";
 import { useState } from "react";
 import NavHoverEffect from "./NavHoverEffect";
+import NavbarCard from './NavbarCard'
 
 const Navbar = () => {
 
@@ -43,7 +44,8 @@ const Navbar = () => {
           </div>
 
           <div className={`nav-section ${menuOpen ? "show-menu": ""}`}>
-            <NavHoverEffect/>
+            {/* <NavHoverEffect/> */}
+            <NavbarCard/>
             </div>
 
           <div className="nav-button">

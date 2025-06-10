@@ -14,7 +14,7 @@ import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import MainNavHeader from "./components/MainNavHeader";
-
+import NavBar2 from "./components/NavBar2"
 
 
 
@@ -23,7 +23,8 @@ export default function App(){
   return(
     <div>
       <MainNavHeader/>
-    <Navbar/>
+      <NavBar2/>
+    {/* <Navbar/> */}
       <HeroSection/>
       <Journey/> 
       <HealthServices/>
