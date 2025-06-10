@@ -11,7 +11,7 @@
 
 
 .capacity-title{
-    justify-self: center;
+    /* justify-self: center; */
     margin-bottom: 10px;
     margin-top: 20px;
     font-size: 35px;
@@ -31,13 +31,16 @@
 
     .capacity-container{
         padding: 10px;
+
     }
 
     .ten-capacity-boxes{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        width: 100%;
+        width: inherit;
+
+   
     }
 }
 

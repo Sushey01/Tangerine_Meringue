@@ -1,6 +1,5 @@
 import React from 'react'
 import './OurCapacity.css'
-import './CapacityCard'
 import CapacityCard from './CapacityCard'
 import Capacity from '../assets/images/capacity.svg'
 

@@ -36,13 +36,13 @@
     .capacity-main-box{
         padding: 0px;
     }
-    /* .capacity-box{
-        align-items: center;
-        align-content: center;
+    .capacity-box{
+        justify-items: center;
+        justify-content: center;
         width: 100%;
         min-width: 160px;
         margin: 0 auto;
-    } */
+    }
 }
 
 
