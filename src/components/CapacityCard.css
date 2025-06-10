@@ -36,7 +36,8 @@
         padding: 0px;
     }
     .capacity-box{
-        justify-self: center;
+        justify-items: center;
+        align-items: center;
         min-width: 185px;
     }
 }
