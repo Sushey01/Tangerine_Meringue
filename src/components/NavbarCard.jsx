@@ -62,6 +62,8 @@ const NavbarCard = ({ menuItems }) => {
     </>
   );
 };
+
+// Sir Teaching Method !
 // const NavbarCard = ({ menuItems }) => {
 //   return (
 //     <div  style={{display:"flex",justifyContent:"space-evenly",position:"relative" }}>

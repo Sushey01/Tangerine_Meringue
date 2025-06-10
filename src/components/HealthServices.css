@@ -184,7 +184,7 @@
 .fifth-image{
     position: absolute;
     top: 69%;
-    left: 48.5%;
+    left: 40%;
 }
 
 
@@ -253,24 +253,24 @@
 
     .first-image{
         /* position: absolute; */
-        top: 7%;
-        left: 35%;
+        top: 6.5%;
+        left: 38%;
     }
 
     .second-image{
         /* position: absolute; */
         top: 23%;
-        left: 40%;
+        left: 42%;
     }
 
     .third-image{
-        top: 40.5%;
-        right: 2%;
+        top: 40%;
+        right:0;
     }
 
     .fourth-image{
-        top: 57%;
-        left: 30%;
+        top: 56.5%;
+        left: 33%;
     }
 
     .fifth-image{
@@ -288,7 +288,7 @@
     .six-health-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
 
