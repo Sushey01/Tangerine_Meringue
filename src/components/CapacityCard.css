@@ -41,7 +41,7 @@
         align-content: center;
     }
     .capacity-box{
-        align-content: center;
+        justify-items: center;
         width: 100%;
         min-width: 160px;
         margin: 0 auto;
