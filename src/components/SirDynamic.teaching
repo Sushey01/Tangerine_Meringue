@@ -1,0 +1,137 @@
+// Sir Teaching Method !
+// const NavbarCard = ({ menuItems }) => {
+//   return (
+//     <div  style={{display:"flex",justifyContent:"space-evenly",position:"relative" }}>
+//       {menuItems.map((item,index) => 
+//       (
+//         <ul key={index}>
+//          <li>
+//         {item.label}
+//        </li>
+//        { item.items && 
+
+// <ul style={{}}>
+
+//  {item.items.map((subItem,subIndex) => (
+
+//   <>
+  
+  
+//     <div style={{width:"200px"}} key={subIndex} id={subIndex}>
+//             {subItem.label}
+//             </div>
+//        { subItem.subItems && 
+//   <ul>
+//     {subItem.subItems.map((ssitem,ssindex) => (
+//       <>
+      
+//       <li>{ssitem.label}</li>
+//       {ssitem.subSubItems &&
+//       <ul>
+//  {ssitem.subSubItems.map((sssitem,sssindex) => (
+
+
+//    <li>{sssitem.label}</li>
+//  ))}
+//       </ul>}
+     
+
+//     </>
+//     ))}
+//   </ul>}
+  
+//   </>
+        
+//         ))}
+
+  
+// </ul>}
+       
+          
+
+        
+//         </ul>
+      
+
+          
+//       ))}
+//     </div>
+//   );
+// };
+
+
+import React from "react";
+import "./NavbarCard.css";
+
+const NavbarCard = ({ menuItems }) => {
+  return (
+    <>
+      {menuItems.map((item, index) => {
+        if (item.type === "dropdown") {
+          return (
+            <li
+              className="drop"
+              key={index}
+              style={{ listStyle: "none", position: "relative", display: "inline-block" }}
+            >
+              <div className="nav-hover-other">
+                <a href={item.link} className="main">{item.label}</a>
+                <div className="dropdown">
+                  <ul>
+                    {item.items.map((subItem, subIndex) => {
+                      if (subItem.subItems) {
+                        return (
+                          <div className="second-dropdown" key={subIndex} style={{ position: "relative" }}>
+                            <a href={subItem.link}>{subItem.label}</a>
+                            <ul className="second-dropdown-hover">
+                              {subItem.subItems.map((nestedItem, nestedIndex) => {
+                                if (nestedItem.subSubItems) {
+                                  return (
+                                    <div className="second-dropdown" key={nestedIndex} style={{ position: "relative" }}>
+                                      <a href={nestedItem.link}>{nestedItem.label}</a>
+                                      <ul className="second-dropdown-hover">
+                                        {nestedItem.subSubItems.map((subSubItem, subSubIndex) => (
+                                          <li key={subSubIndex}>
+                                            <a href={subSubItem.link}>{subSubItem.label}</a>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                  );
+                                }
+                                return (
+                                  <li key={nestedIndex} className="drop1">
+                                    <a href={nestedItem.link}>{nestedItem.label}</a>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        );
+                      }
+                      return (
+                        <li className="drop1" key={subIndex}>
+                          <a href={subItem.link}>{subItem.label}</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            </li>
+          );
+        }
+
+        return (
+          <div className="nav-hover" key={index}>
+            <a href={item.link} className={item.label === "Home" ? "active main" : ""}>
+              {item.label}
+            </a>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+export default NavbarCard;

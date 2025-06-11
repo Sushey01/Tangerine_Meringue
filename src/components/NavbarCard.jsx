@@ -1,8 +1,6 @@
 import React from "react";
 import "./NavbarCard.css";
 
-
-
 const NavbarCard = ({ menuItems }) => {
   return (
     <>
@@ -19,18 +17,22 @@ const NavbarCard = ({ menuItems }) => {
               }}
             >
               <div className="nav-hover-other">
-                <a href={item.link} className="main">{item.label}</a>
+                <a href={item.link} className="main">
+                  {item.label}
+                </a>
                 <div className="dropdown">
                   <ul>
                     {item.items.map((subItem, subIndex) => {
-                      if (subItem.subSubItems) {
+                      // Check if subItem has subItems (nested dropdown)
+                      if (subItem.subItems) {
                         return (
                           <div className="second-dropdown" key={subIndex}>
                             <a href={subItem.link}>{subItem.label}</a>
                             <ul className="second-dropdown-hover">
                               {subItem.subItems.map((nestedItem, nestedIndex) => (
                                 <li key={nestedIndex}>
-                                  <a href={nestedItem.link}>{nestedItem.label}
+                                  <a href={nestedItem.link}>
+                                    {nestedItem.label}
                                   </a>
                                 </li>
                               ))}
@@ -38,6 +40,7 @@ const NavbarCard = ({ menuItems }) => {
                           </div>
                         );
                       }
+                      // Regular submenu item without further nesting
                       return (
                         <div className="drop1" key={subIndex}>
                           <a href={subItem.link}>{subItem.label}</a>
@@ -51,9 +54,13 @@ const NavbarCard = ({ menuItems }) => {
           );
         }
 
+        // Single menu item (no dropdown)
         return (
           <div className="nav-hover" key={index}>
-            <a href={item.link} className={item.label === "Home" ? "active main" : ""}>
+            <a
+              href={item.link}
+              className={item.label === "Home" ? "active main" : ""}
+            >
               {item.label}
             </a>
           </div>
@@ -63,64 +70,4 @@ const NavbarCard = ({ menuItems }) => {
   );
 };
 
-// Sir Teaching Method !
-// const NavbarCard = ({ menuItems }) => {
-//   return (
-//     <div  style={{display:"flex",justifyContent:"space-evenly",position:"relative" }}>
-//       {menuItems.map((item,index) => 
-//       (
-//         <ul key={index}>
-//          <li>
-//         {item.label}
-//        </li>
-//        { item.items && 
-
-// <ul style={{}}>
-
-//  {item.items.map((subItem,subIndex) => (
-
-//   <>
-  
-  
-//     <div style={{width:"200px"}} key={subIndex} id={subIndex}>
-//             {subItem.label}
-//             </div>
-//        { subItem.subItems && 
-//   <ul>
-//     {subItem.subItems.map((ssitem,ssindex) => (
-//       <>
-      
-//       <li>{ssitem.label}</li>
-//       {ssitem.subSubItems &&
-//       <ul>
-//  {ssitem.subSubItems.map((sssitem,sssindex) => (
-
-
-//    <li>{sssitem.label}</li>
-//  ))}
-//       </ul>}
-     
-
-//     </>
-//     ))}
-//   </ul>}
-  
-//   </>
-        
-//         ))}
-
-  
-// </ul>}
-       
-          
-
-        
-//         </ul>
-      
-
-          
-//       ))}
-//     </div>
-//   );
-// };
 export default NavbarCard;

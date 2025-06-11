@@ -50,9 +50,14 @@
   clip-path: inset(0 0 0 0);
 }
 
-
 /* ---------- Dropdown Hover Trigger ---------- */
-.drop:hover .dropdown {
+/* Make sure .drop is relative for absolute dropdown positioning */
+.drop {
+  position: relative;
+}
+
+/* Show dropdown when hovering .drop, targeting dropdown inside nav-hover-other */
+.drop:hover .nav-hover-other > .dropdown {
   display: block;
   top: 80%;
   margin-top: 10px;
@@ -65,11 +70,26 @@
 .drop1,
 .second-dropdown {
   padding: 10px;
-  padding-right: 0px;
-  
-  padding-bottom: 0px;
-  padding-top: 0px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 0;
   font-size: 12px;
+}
+
+
+/* Make all first-level dropdown links have consistent padding */
+.drop1 a,
+.second-dropdown > a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  color: #212121;
+  text-decoration: none;
+}
+
+/* Add position relative for nested dropdown positioning */
+.second-dropdown {
+  position: relative;
 }
 
 .drop1:hover,
@@ -101,7 +121,8 @@
   background-color: #fff;
 }
 
-.second-dropdown:hover .second-dropdown-hover,
+/* Show nested dropdown on hover */
+.second-dropdown:hover > .second-dropdown-hover,
 .second-dropdown-hover:hover {
   display: block;
   cursor: pointer;
@@ -121,7 +142,7 @@
   border-radius: 25px;
 }
 
-/* ---------- Hamburger Icon (Mobile) ---------- */
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -152,7 +173,6 @@
     cursor: pointer;
   }
 
-
   .nav-section,
   .nav-button {
     display: none;
@@ -160,10 +180,10 @@
     width: 100%;
   }
 
-   .nav-section.show-menu,
+  .nav-section.show-menu,
   .nav-button.show-menu {
     display: flex;
-  } 
+  }
 }
 
 @media (min-width: 646px) and (max-width: 1024px) {
