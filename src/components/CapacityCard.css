@@ -11,7 +11,7 @@
     border-radius:11px;
     padding: 10px 0;
     min-width: 210px;
-    align-items: center;
+    justify-items: center;
     max-width: 250px;
     background: #ffffff40;
     backdrop-filter: blur(40px);
