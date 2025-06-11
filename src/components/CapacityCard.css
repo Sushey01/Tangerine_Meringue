@@ -37,6 +37,7 @@
 
     .capacity-main-box{
         padding: 0px;
+        justify-items: center;
     }
     .capacity-box{
         align-content: center;
