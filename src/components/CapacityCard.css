@@ -31,7 +31,9 @@
 
 @media(max-width:645px){
 
-
+    .capacity-title{
+        text-align: center;
+    }
 
     .capacity-main-box{
         padding: 0px;
