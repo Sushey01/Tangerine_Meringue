@@ -39,14 +39,14 @@
         padding: 0px;
     }
     .capacity-box{
-        justify-content: center;
+        align-content: center;
         width: 100%;
         min-width: 160px;
         margin: 0 auto;
     }
 
     .capacity-box img{
-        align-self: center;
+        justify-self: center;
     }
 
     .capacity-content{
