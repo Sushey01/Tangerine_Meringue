@@ -62,7 +62,7 @@
   top: 80%;
   margin-top: 10px;
   border-radius: 5px;
-  width: 200px;
+  width: 190px;
   cursor: pointer;
 }
 
@@ -81,7 +81,6 @@
 .drop1 a,
 .second-dropdown > a {
   display: block;
-  padding: 10px;
   font-size: 16px;
   color: #212121;
   text-decoration: none;
