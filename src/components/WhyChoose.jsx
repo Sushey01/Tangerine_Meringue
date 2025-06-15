@@ -116,7 +116,7 @@ const WhyChoose = () => {
           <div className="choose-us-image">
             <img src={HalfCircle} className="half-circle"></img>
            </div>
-          <img src={DoctorGroup} alt="DoctorGroup" className="doctor-group"></img>
+          <img  src={DoctorGroup} alt="DoctorGroup" className="doctor-group"></img>
         </div>
       </div>
     </section>

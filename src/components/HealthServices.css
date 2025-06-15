@@ -294,34 +294,34 @@
 
 
      .first-image{
-        top: 12%;
-        left: 21%;
+        top: 14%;
+        left: 20%;
     }
 
     .second-image{
-        top: 11%;
+        top: 13%;
         left: 75%;
     }
 
 
 
     .third-image{
-        top: 45%;
+        top: 48%;
         right: 0;
     }
 
     .fourth-image{
-        top: 45%;
-        left: 18%;
+        top: 47%;
+        left: 16%;
     }
 
     .fifth-image{
-        top: 80%;
-        left: 22%;
+        top: 82%;
+        left: 21%;
     }
 
     .sixth-image{
-        top: 80%;
+        top: 82%;
     }
 }
 
