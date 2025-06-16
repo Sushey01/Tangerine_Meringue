@@ -6,7 +6,7 @@ This project is a **clone** of the South Himal Hospital website, recreated for l
 
 ## 🌐 Live Demo
 
-🔗 [View Live Demo](https://tangerine-teal.vercel.app/)
+🔗 [Live Website Demo](https://tangerine-teal.vercel.app/)
 
 ## 📌 Features
 
