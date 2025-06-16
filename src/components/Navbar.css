@@ -2,9 +2,13 @@
 
 .nav-wrapper{
     border: 1px solid #fff;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
-    /* position: fixed; */
+     position: fixed;
+  top: 55px; 
+  z-index: 999;
+  border: 1px solid #fff;
+  background-color: #fff;
 }
 
 .nav-content{
@@ -70,6 +74,12 @@
     display: none;
 }
 
+
+@media(max-width:645px){
+    .nav-wrapper{
+        padding-top: 165px;
+    }
+}
 
 
 
