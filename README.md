@@ -2,7 +2,16 @@
 
 This project is a **clone** of the South Himal Hospital website, recreated for learning and practice purposes. It replicates the core design, features, and layout of the original hospital website using modern web technologies.
 
+
+
 > ⚠️ **Disclaimer:** This is a clone project meant for educational use only. It is **not affiliated** with or endorsed by South Himal Hospital.
+
+
+# Welcome to Tangerine Meringue!
+
+Tangerine Meringue is a responsive hospital website clone designed to showcase healthcare services, medical consultants, and patient resources. Built with React and styled using external CSS, it features modern UI effects such as hover animations and clip-path styling to create an engaging user experience. The project is developed for educational purposes to practice frontend development and UI design by replicating a real-world healthcare site’s look and feel.
+
+Whether you're here to explore frontend development, CSS tricks, or healthcare UI design inspiration — dive in and experience it yourself!
 
 ## 🌐 Live Demo
 
